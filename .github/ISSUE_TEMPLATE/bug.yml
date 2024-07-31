@@ -1,5 +1,5 @@
 name: バグレポート
-description: 見つけた不具合じゃこちらに記載してください
+description: 見つけた不具合や、不明瞭な動作があればこちらに記載してください
 title: "[BUG] バグの内容"
 labels: ["bug"]
 body:
