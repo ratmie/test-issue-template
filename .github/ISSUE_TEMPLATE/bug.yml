@@ -1,8 +1,7 @@
 name: バグレポート
 description: 見つけた不具合じゃこちらに記載してください
 title: "[BUG] バグの内容"
-labels: bug
-assignees: ''
+labels: ["bug"]
 body:
   - type: textarea
     id: what-happened
