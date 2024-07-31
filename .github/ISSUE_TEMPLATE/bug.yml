@@ -12,15 +12,14 @@ body:
     validations:
       required: true
   - type: checkboxes
+    id: env
     attributes:
       label: 発生した環境を選択してください
       description: 再現確認できたものをすべてチェックしてください
       options:
-        - 本番環境
-        - 開発環境
-        - ローカル環境
-    validations:
-      required: true
+      - label: 本番環境
+      - label: 開発環境
+      - label: ローカル環境
   - type: textarea
     attributes:
       label: 発生したバージョン
