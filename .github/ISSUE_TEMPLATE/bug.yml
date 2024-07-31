@@ -1,0 +1,44 @@
+name: バグレポート
+description: 見つけた不具合じゃこちらに記載してください
+title: "[BUG] バグの内容"
+labels: bug
+assignees: ''
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: バグの内容
+      description: バグの内容を明確かつ簡潔に説明してください
+      placeholder: 必要であればスクリーンショットを添付してください
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: 発生した環境を選択してください
+      description: 再現確認できたものをすべてチェックしてください
+      options:
+        - 本番環境
+        - 開発環境
+        - ローカル環境
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 発生したバージョン
+      description: 発生したバージョン,コミットidを記載してください
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 再現手順
+      placeholder: |
+        1. 〇〇画面を開く
+        1. 〇〇ボタンを押す
+        1. 〜というエラーが表示される
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: 補足
+    validations:
+      required: false
